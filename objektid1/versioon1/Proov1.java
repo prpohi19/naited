@@ -4,5 +4,8 @@ public class Proov1{
 		juku.liigu();
 		juku.muudaSuund(Suund.YLES);
 		System.out.println(juku);
+		juku.liigu();
+		juku.liigu();
+		System.out.println(juku);
 	}
 }
