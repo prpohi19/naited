@@ -1,0 +1,3 @@
+enum Tyyp{
+	MANGIJA, KOLETIS
+}
