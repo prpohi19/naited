@@ -1,0 +1,24 @@
+Andmete ja jooniste rakenduste klotsid
+
+Liides
+
+ArvudeLugeja
+  double[] loeArvud()
+  
+  Realiseerivad klassid
+    TekstistArvujadaLugeja
+	TabelistVeeruLugeja
+	MalustLugeja
+	
+
+Algoritm
+    double arvuta(double[] arvud)
+	Keskmine
+	Suurim
+	
+Arvutaja
+    double arvuta(Algoritm, ArvudeLugeja)
+	LihtneArvutaja
+	PuhverdavArvutaja
+	AnalyysivArvutaja
+     

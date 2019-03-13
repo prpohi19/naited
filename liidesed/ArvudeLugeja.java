@@ -1,0 +1,3 @@
+interface ArvudeLugeja{
+	double[] loeArvud();
+}
