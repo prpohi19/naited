@@ -19,6 +19,18 @@ public class Kontroll1{
 	public void arvutus3(){
 	   assertEquals(2, Abifunktsioonid.geomKeskmine(new double[]{1, 1, 1, 4, 8}), 0.001);
 	}
+	@Test(expected=ArithmeticException.class)
+	public void arvutus4(){
+	    Abifunktsioonid.geomKeskmine(new double[]{});
+	}
+	@Test(expected=ArithmeticException.class)
+	public void arvutus5(){
+	    Abifunktsioonid.geomKeskmine(null);
+	}
+	@Test
+	public void proov2(){
+	   assertNull(null);
+	}
 }
 
 /*
