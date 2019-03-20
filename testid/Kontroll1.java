@@ -15,6 +15,10 @@ public class Kontroll1{
 	   assertEquals(3, Abifunktsioonid.geomKeskmine(new double[]{1, 3, 9}), 0.001);
 	}
 	//Lisa test viie arvu geomeetrilise keskmise leidmiseks
+	@Test
+	public void arvutus3(){
+	   assertEquals(2, Abifunktsioonid.geomKeskmine(new double[]{1, 1, 1, 4, 8}), 0.001);
+	}
 }
 
 /*
