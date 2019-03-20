@@ -6,6 +6,15 @@ public class Kontroll1{
 	public void esimene(){
 		System.out.println("Testi automaatkäivitus");
 	}
+	@Test
+	public void arvutus1(){
+	   assertEquals(6, Abifunktsioonid.geomKeskmine(new double[]{4, 9}), 0.001);
+	}
+	@Test
+	public void arvutus2(){
+	   assertEquals(3, Abifunktsioonid.geomKeskmine(new double[]{1, 3, 9}), 0.001);
+	}
+	//Lisa test viie arvu geomeetrilise keskmise leidmiseks
 }
 
 /*
