@@ -1,0 +1,4 @@
+Juku,170
+Kati,165
+Anu,168
+Mati,175
