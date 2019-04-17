@@ -19,4 +19,28 @@ class PuuElement<T>{
 		}
 		return null;
 	}
+	public String toString(){
+		return ((sisu==null) ? "." : sisu.toString())+
+		   ": "+loendur;
+	}
+	public String alampuuString(){
+		String vastus=toString()+"(";
+		for(PuuElement<T> e : lapsed){
+			vastus+=e.alampuuString();
+		}
+		return vastus+")";
+	}
+	//Koostage funktsioon alampuu kuvamiseks <ul> ja <li>
+	//elementide abil
+	public String alampuuHTML(){
+		String vastus=toString();
+		if(lapsed.size()>0){
+	     vastus+="<ul>";
+		 for(PuuElement<T> e : lapsed){
+			vastus+="<li>"+e.alampuuHTML()+"</li>";
+		 }
+		 vastus+="</ul>";
+		}
+		return vastus;
+	}
 }
