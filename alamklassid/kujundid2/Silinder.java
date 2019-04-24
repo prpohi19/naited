@@ -10,4 +10,7 @@ public class Silinder extends RuumilineKujund{
 	public double pohjaYmbermoot(){
 		return 2*Math.PI*r;
 	}
+	public double kysiRaadius(){
+		return r;
+	}
 }
